@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableName;
 import lombok.Data;
 
+import java.util.Set;
+
 /**
  * @author chenchunlu
  * @create 2021-11-06 18:32
@@ -12,10 +14,8 @@ import lombok.Data;
 @TableName("user")
 public class User {
     @TableId
-    private Long id;
+    private Integer id;
     private String name;
     private String pwd;
-    private String sex;
-    private String home;
-    private String info;
-}
+
+    }

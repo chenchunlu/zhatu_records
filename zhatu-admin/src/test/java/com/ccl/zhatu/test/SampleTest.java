@@ -1,22 +1,22 @@
 package com.ccl.zhatu.test;
 
 import com.ccl.zhatu.admin.entity.User;
-import com.ccl.zhatu.main.ZhatuRecordsApplication;
 import com.ccl.zhatu.admin.mapper.UserMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ContextConfiguration;
 
 
 /**
  * @author chenchunlu
- * @create 2021-11-06 18:35
+ * @date  2021-11-06 18:35
  */
 
-
-@SpringBootTest(classes = ZhatuRecordsApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest
+@ContextConfiguration
 public class SampleTest {
-    @Autowired
+
     private UserMapper userMapper;
 
     @Test
